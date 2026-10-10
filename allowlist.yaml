@@ -1,0 +1,40 @@
+# tubelight allowlist
+#
+# This is the only file you need to edit. Every channel, playlist and video
+# listed here is shown on the site; nothing else is.
+#
+# The channels below are EXAMPLES. Replace them with the ones you want your
+# kids to see. Handles start with "@", channel IDs start with "UC",
+# playlist IDs start with "PL" (or "UU"), video IDs are 11 characters.
+
+settings:
+  min_duration_seconds: 180      # drops Shorts and clips shorter than 3 minutes
+  max_videos_per_channel: 30     # newest N videos kept per channel or playlist
+  exclude_live: true             # skip live streams and premieres
+  max_pages_per_source: 4        # safety cap: pages of 50 fetched per channel (quota)
+
+# Videos hidden even if their channel is allowed.
+blocked_videos: []
+  # - "dQw4w9WgXcQ"
+
+shelves:
+  - name: Science            # EXAMPLE shelf, replace
+    channels:
+      - "@SciShowKids"       # example handle
+      - "@TEDEd"             # example handle
+    playlists: []
+    videos:
+      - "aircAruvnKk"        # example single video: 3Blue1Brown, neural networks
+
+  - name: Art and making     # EXAMPLE shelf, replace
+    channels:
+      - "@ArtforKidsHub"     # example handle
+    playlists: []
+      # - "PLxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    videos: []
+
+  - name: Stories and songs  # EXAMPLE shelf, replace
+    channels:
+      - "@SesameStreet"      # example handle
+    playlists: []
+    videos: []

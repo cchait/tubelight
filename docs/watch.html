@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Watch · tubelight</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c2521f'/%3E%3Cpath d='M12 9l12 7-12 7z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="watch">
+  <header class="top">
+    <a class="back" href="index.html">&#8592; All shelves</a>
+    <a class="brand" href="index.html" aria-label="tubelight home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M12 9l12 7-12 7z" fill="var(--accent-fg)"/></svg>
+      tubelight
+    </a>
+  </header>
+  <main id="app">
+    <div class="player" id="player"></div>
+    <div class="meta">
+      <h1 id="title">Loading…</h1>
+      <p id="channel"></p>
+    </div>
+    <section class="more">
+      <h2 id="more-title"></h2>
+      <div class="grid" id="more"></div>
+    </section>
+    <noscript><div class="notice"><h2>JavaScript is off</h2><p>tubelight needs JavaScript to play videos.</p></div></noscript>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
