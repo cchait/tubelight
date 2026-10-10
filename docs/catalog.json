@@ -1,0 +1,993 @@
+{
+ "settings": {
+  "exclude_live": true,
+  "max_videos_per_channel": 30,
+  "min_duration_seconds": 180
+ },
+ "shelves": [
+  {
+   "name": "Science",
+   "videos": [
+    {
+     "channel": "TED-Ed",
+     "duration": 364,
+     "id": "h6CmKF-mN2U",
+     "published": "2026-10-08T15:01:11Z",
+     "thumbnail": "https://i.ytimg.com/vi/h6CmKF-mN2U/mqdefault.jpg",
+     "title": "Which is better: Buying or renting a home? - Ella Feldman"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 380,
+     "id": "JjhrN0FcHpM",
+     "published": "2026-10-06T15:01:57Z",
+     "thumbnail": "https://i.ytimg.com/vi/JjhrN0FcHpM/mqdefault.jpg",
+     "title": "Why is Queen Victoria so controversial? - Carolyn Harris"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 363,
+     "id": "G3hXvByzLHs",
+     "published": "2026-10-01T15:00:32Z",
+     "thumbnail": "https://i.ytimg.com/vi/G3hXvByzLHs/mqdefault.jpg",
+     "title": "6 ways to be more persuasive"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 397,
+     "id": "z3Y-gsBKChc",
+     "published": "2026-09-29T15:00:44Z",
+     "thumbnail": "https://i.ytimg.com/vi/z3Y-gsBKChc/mqdefault.jpg",
+     "title": "Why are AI data centers using so much electricity? - Sajan Saini"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 347,
+     "id": "jG7ULeWUfDw",
+     "published": "2026-09-24T15:01:19Z",
+     "thumbnail": "https://i.ytimg.com/vi/jG7ULeWUfDw/mqdefault.jpg",
+     "title": "Why magnets stumped scientists for so long - Rachel Yang"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 326,
+     "id": "N2uQWfV6Jr4",
+     "published": "2026-09-22T15:00:51Z",
+     "thumbnail": "https://i.ytimg.com/vi/N2uQWfV6Jr4/mqdefault.jpg",
+     "title": "4 ways to fix your attention span - Shannon Odell"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 390,
+     "id": "bHB5iiDDJ-s",
+     "published": "2026-09-17T15:01:23Z",
+     "thumbnail": "https://i.ytimg.com/vi/bHB5iiDDJ-s/mqdefault.jpg",
+     "title": "Everything you need to know about bird flu - Benjamin Anderson"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 569,
+     "id": "EMbZ72cCAzI",
+     "published": "2026-09-15T15:00:40Z",
+     "thumbnail": "https://i.ytimg.com/vi/EMbZ72cCAzI/mqdefault.jpg",
+     "title": "How to explain something complicated"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 354,
+     "id": "I8XaYkRW1tA",
+     "published": "2026-09-10T15:00:58Z",
+     "thumbnail": "https://i.ytimg.com/vi/I8XaYkRW1tA/mqdefault.jpg",
+     "title": "Why do some people have a better sense of direction than others? - Oliver Baumann"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 345,
+     "id": "_gP3aXvNmv8",
+     "published": "2026-09-08T15:00:17Z",
+     "thumbnail": "https://i.ytimg.com/vi/_gP3aXvNmv8/mqdefault.jpg",
+     "title": "Ever walk into a room and forget what you were doing? - Gabriel Radvansky"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 340,
+     "id": "BSdEiOYvKpE",
+     "published": "2026-09-03T15:00:10Z",
+     "thumbnail": "https://i.ytimg.com/vi/BSdEiOYvKpE/mqdefault.jpg",
+     "title": "What are tariffs, and how do they work?"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 306,
+     "id": "JOs-q7rXqdk",
+     "published": "2026-09-01T15:00:06Z",
+     "thumbnail": "https://i.ytimg.com/vi/JOs-q7rXqdk/mqdefault.jpg",
+     "title": "4 ways to tell a great story"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 340,
+     "id": "QyRqlTV60zM",
+     "published": "2026-08-25T15:01:09Z",
+     "thumbnail": "https://i.ytimg.com/vi/QyRqlTV60zM/mqdefault.jpg",
+     "title": "Plato’s infamous Ship of State thought experiment - Michael Vazquez"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 280,
+     "id": "l29K-ZkARmE",
+     "published": "2026-08-18T15:00:37Z",
+     "thumbnail": "https://i.ytimg.com/vi/l29K-ZkARmE/mqdefault.jpg",
+     "title": "The Greek myth of Apollo's curse - Iseult Gillespie"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 388,
+     "id": "2A1IEBFt6Xg",
+     "published": "2026-08-11T15:01:10Z",
+     "thumbnail": "https://i.ytimg.com/vi/2A1IEBFt6Xg/mqdefault.jpg",
+     "title": "How do Maglev trains work? - Ning Zhao"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 358,
+     "id": "-61qDRPG3to",
+     "published": "2026-08-04T15:00:09Z",
+     "thumbnail": "https://i.ytimg.com/vi/-61qDRPG3to/mqdefault.jpg",
+     "title": "The fastest way to board a plane, according to mathematics - Rachel Yang"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 401,
+     "id": "krNP8RlDsbw",
+     "published": "2026-07-28T15:00:28Z",
+     "thumbnail": "https://i.ytimg.com/vi/krNP8RlDsbw/mqdefault.jpg",
+     "title": "Red gold: The world's most expensive spice - Carolyn Beans"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 351,
+     "id": "5jPCAlE0z7I",
+     "published": "2026-07-21T15:01:01Z",
+     "thumbnail": "https://i.ytimg.com/vi/5jPCAlE0z7I/mqdefault.jpg",
+     "title": "The magical forest realm hiding at the bottom of the ocean - Luka Seamus Wright and Salomé Buglass"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 369,
+     "id": "JhxuP0AuRPA",
+     "published": "2026-07-14T15:00:42Z",
+     "thumbnail": "https://i.ytimg.com/vi/JhxuP0AuRPA/mqdefault.jpg",
+     "title": "When did we start using passports? - Kristin Surak"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 371,
+     "id": "5ljV0Vxu00M",
+     "published": "2026-07-07T15:00:49Z",
+     "thumbnail": "https://i.ytimg.com/vi/5ljV0Vxu00M/mqdefault.jpg",
+     "title": "How does the space station never run out of oxygen? - Alvaro Romero-Calvo and Theo St Francis"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 373,
+     "id": "QIqKGMM8ivM",
+     "published": "2026-06-30T15:03:40Z",
+     "thumbnail": "https://i.ytimg.com/vi/QIqKGMM8ivM/mqdefault.jpg",
+     "title": "Psychedelics, mind control, radiation-eating: The secret superpowers of fungi - Max G. Levy"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 318,
+     "id": "DbEZmLoGDbk",
+     "published": "2026-06-25T15:01:31Z",
+     "thumbnail": "https://i.ytimg.com/vi/DbEZmLoGDbk/mqdefault.jpg",
+     "title": "How a broken heart affects your body"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 334,
+     "id": "6hCo4S_1Fhw",
+     "published": "2026-06-23T15:00:20Z",
+     "thumbnail": "https://i.ytimg.com/vi/6hCo4S_1Fhw/mqdefault.jpg",
+     "title": "Why avalanches are most deadly when they stop - Simon Trautman"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 305,
+     "id": "FBpBUwlDId0",
+     "published": "2026-06-18T15:01:59Z",
+     "thumbnail": "https://i.ytimg.com/vi/FBpBUwlDId0/mqdefault.jpg",
+     "title": "Should you rinse your dishes before placing them in the dishwasher? - Rachel Yang"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 334,
+     "id": "eR5blcjll8o",
+     "published": "2026-06-16T15:01:01Z",
+     "thumbnail": "https://i.ytimg.com/vi/eR5blcjll8o/mqdefault.jpg",
+     "title": "How to attack (and defend) a medieval castle - Connor C. Wilson"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 360,
+     "id": "JDqpcHGfJ2I",
+     "published": "2026-06-11T15:00:13Z",
+     "thumbnail": "https://i.ytimg.com/vi/JDqpcHGfJ2I/mqdefault.jpg",
+     "title": "Meet the slow loris, the only venomous primate in existence - Stephanie A. Poindexter"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 338,
+     "id": "Q9Vt6NGBVBc",
+     "published": "2026-06-09T15:00:44Z",
+     "thumbnail": "https://i.ytimg.com/vi/Q9Vt6NGBVBc/mqdefault.jpg",
+     "title": "What is sumo, and why is it so popular? - Lee Thompson"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 300,
+     "id": "HDt_rTPPh70",
+     "published": "2026-06-04T15:01:03Z",
+     "thumbnail": "https://i.ytimg.com/vi/HDt_rTPPh70/mqdefault.jpg",
+     "title": "Why does catnip make cats go crazy? - Jaap de Roode"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 331,
+     "id": "pyDZpDkU46Y",
+     "published": "2026-06-02T15:00:47Z",
+     "thumbnail": "https://i.ytimg.com/vi/pyDZpDkU46Y/mqdefault.jpg",
+     "title": "The dark origins of Disney fairy tales - Claudia Schwabe"
+    },
+    {
+     "channel": "TED-Ed",
+     "duration": 293,
+     "id": "BlK23YzqXOM",
+     "published": "2026-05-28T15:00:54Z",
+     "thumbnail": "https://i.ytimg.com/vi/BlK23YzqXOM/mqdefault.jpg",
+     "title": "Why your best ideas usually start as bad ones | Think Like A Musician"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1594,
+     "id": "4VinwOQkHGg",
+     "published": "2025-05-27T10:00:16Z",
+     "thumbnail": "https://i.ytimg.com/vi/4VinwOQkHGg/mqdefault.jpg",
+     "title": "The Yuckiest Animals | SciShow Kids Compilation"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1277,
+     "id": "WX_E1CAZjaQ",
+     "published": "2025-05-19T10:01:01Z",
+     "thumbnail": "https://i.ytimg.com/vi/WX_E1CAZjaQ/mqdefault.jpg",
+     "title": "KABOOM! All About Volcanoes! | SciShow Kids Compilation"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 504,
+     "id": "0jKoOUZ1GBM",
+     "published": "2025-05-12T14:42:19Z",
+     "thumbnail": "https://i.ytimg.com/vi/0jKoOUZ1GBM/mqdefault.jpg",
+     "title": "Every Kind of Volcano | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 348,
+     "id": "8qdYCpSW2eY",
+     "published": "2025-04-28T10:00:21Z",
+     "thumbnail": "https://i.ytimg.com/vi/8qdYCpSW2eY/mqdefault.jpg",
+     "title": "The Biggest Volcano Ever is in Space! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 485,
+     "id": "YR4wtGWK7eE",
+     "published": "2025-04-14T10:01:01Z",
+     "thumbnail": "https://i.ytimg.com/vi/YR4wtGWK7eE/mqdefault.jpg",
+     "title": "Hawai’i: Land of Volcanoes | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1707,
+     "id": "RvRU_4XWPlw",
+     "published": "2025-03-31T10:00:57Z",
+     "thumbnail": "https://i.ytimg.com/vi/RvRU_4XWPlw/mqdefault.jpg",
+     "title": "Solving Problems Around the Fort! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1154,
+     "id": "v8cDsAf0nN0",
+     "published": "2025-03-24T10:01:12Z",
+     "thumbnail": "https://i.ytimg.com/vi/v8cDsAf0nN0/mqdefault.jpg",
+     "title": "Squeaks' Adventure Around The World! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 407,
+     "id": "kKqd0_cydZM",
+     "published": "2025-03-17T10:00:57Z",
+     "thumbnail": "https://i.ytimg.com/vi/kKqd0_cydZM/mqdefault.jpg",
+     "title": "Iceland: A Land of Ice AND Fire! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 375,
+     "id": "HhXnRfyUbeQ",
+     "published": "2025-03-03T11:00:20Z",
+     "thumbnail": "https://i.ytimg.com/vi/HhXnRfyUbeQ/mqdefault.jpg",
+     "title": "The Fiordlands of New Zealand! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 435,
+     "id": "0U4lOGo593k",
+     "published": "2025-02-24T17:00:02Z",
+     "thumbnail": "https://i.ytimg.com/vi/0U4lOGo593k/mqdefault.jpg",
+     "title": "Yellowstone: The World’s First National Park! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1306,
+     "id": "annJ7XUxMjk",
+     "published": "2025-02-13T11:00:04Z",
+     "thumbnail": "https://i.ytimg.com/vi/annJ7XUxMjk/mqdefault.jpg",
+     "title": "Going to the Doctor! | SciShow Kids Compilation"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1384,
+     "id": "XtSq1wcFSEI",
+     "published": "2025-02-03T19:30:02Z",
+     "thumbnail": "https://i.ytimg.com/vi/XtSq1wcFSEI/mqdefault.jpg",
+     "title": "Your Body's Senses | SciShow Kids Compilation"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 467,
+     "id": "vKxpbmdPSyk",
+     "published": "2025-01-27T11:01:13Z",
+     "thumbnail": "https://i.ytimg.com/vi/vKxpbmdPSyk/mqdefault.jpg",
+     "title": "Senses You Didn’t Know You Have | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 502,
+     "id": "6WNHyAXIN8c",
+     "published": "2025-01-13T11:00:12Z",
+     "thumbnail": "https://i.ytimg.com/vi/6WNHyAXIN8c/mqdefault.jpg",
+     "title": "How Ears Let Us Hear the World! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 491,
+     "id": "r2xP7heE0wk",
+     "published": "2024-12-23T17:14:20Z",
+     "thumbnail": "https://i.ytimg.com/vi/r2xP7heE0wk/mqdefault.jpg",
+     "title": "How Eyes Let Us See The World | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 647,
+     "id": "VXINWLn57sE",
+     "published": "2024-12-09T11:00:37Z",
+     "thumbnail": "https://i.ytimg.com/vi/VXINWLn57sE/mqdefault.jpg",
+     "title": "Mountains And Volcanoes! | SciShow Kids Compilation"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1004,
+     "id": "1bRTC3cfJIk",
+     "published": "2024-12-02T11:00:04Z",
+     "thumbnail": "https://i.ytimg.com/vi/1bRTC3cfJIk/mqdefault.jpg",
+     "title": "Water Has Superpowers | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 405,
+     "id": "vD-ZwMjRDPU",
+     "published": "2024-11-25T11:01:10Z",
+     "thumbnail": "https://i.ytimg.com/vi/vD-ZwMjRDPU/mqdefault.jpg",
+     "title": "Water's Amazing Journey | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 334,
+     "id": "f-FsMRCutlI",
+     "published": "2024-11-11T11:00:54Z",
+     "thumbnail": "https://i.ytimg.com/vi/f-FsMRCutlI/mqdefault.jpg",
+     "title": "Water Made the Grand Canyon! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 328,
+     "id": "5Ssty1ejoek",
+     "published": "2024-10-28T10:00:06Z",
+     "thumbnail": "https://i.ytimg.com/vi/5Ssty1ejoek/mqdefault.jpg",
+     "title": "Where Can We Find Water?  | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1466,
+     "id": "QCW0VQtQa-8",
+     "published": "2024-10-14T10:00:33Z",
+     "thumbnail": "https://i.ytimg.com/vi/QCW0VQtQa-8/mqdefault.jpg",
+     "title": "Why Things Float! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1327,
+     "id": "TuY1NhrKIeM",
+     "published": "2024-10-07T10:00:21Z",
+     "thumbnail": "https://i.ytimg.com/vi/TuY1NhrKIeM/mqdefault.jpg",
+     "title": "The Building Blocks of Earth: Rocks | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 484,
+     "id": "8ZT9Bt7VZDU",
+     "published": "2024-09-30T10:00:09Z",
+     "thumbnail": "https://i.ytimg.com/vi/8ZT9Bt7VZDU/mqdefault.jpg",
+     "title": "How Metamorphic Rocks Are Like Butterflies | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 492,
+     "id": "b5eGg3TxIKc",
+     "published": "2024-09-16T14:29:18Z",
+     "thumbnail": "https://i.ytimg.com/vi/b5eGg3TxIKc/mqdefault.jpg",
+     "title": "The Many Layers of Sedimentary Rocks | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 3643,
+     "id": "tWTnCKvhQn4",
+     "published": "2024-09-06T06:31:01Z",
+     "thumbnail": "https://i.ytimg.com/vi/tWTnCKvhQn4/mqdefault.jpg",
+     "title": "Crafting with Complexly #Learnathon2024"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 422,
+     "id": "_ebd7k_lUAs",
+     "published": "2024-09-05T10:00:38Z",
+     "thumbnail": "https://i.ytimg.com/vi/_ebd7k_lUAs/mqdefault.jpg",
+     "title": "Igneous Rocks Used to Be Liquid! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1456,
+     "id": "YNuc6isal8Q",
+     "published": "2024-05-28T10:00:28Z",
+     "thumbnail": "https://i.ytimg.com/vi/YNuc6isal8Q/mqdefault.jpg",
+     "title": "How Things Fly! | SciShow Kids"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 1464,
+     "id": "yzwdJjo4vGw",
+     "published": "2024-05-20T10:00:51Z",
+     "thumbnail": "https://i.ytimg.com/vi/yzwdJjo4vGw/mqdefault.jpg",
+     "title": "Coolest Ocean Facts! | SciShow Kids Compilation"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 949,
+     "id": "sqkODDcJG8w",
+     "published": "2024-05-16T10:00:50Z",
+     "thumbnail": "https://i.ytimg.com/vi/sqkODDcJG8w/mqdefault.jpg",
+     "title": "Think Like an Engineer: Solving Problems from Start to Finish | SciShow Kids Compilation"
+    },
+    {
+     "channel": "SciShow Kids",
+     "duration": 323,
+     "id": "taOokuzR2EI",
+     "published": "2024-05-13T10:00:51Z",
+     "thumbnail": "https://i.ytimg.com/vi/taOokuzR2EI/mqdefault.jpg",
+     "title": "Think Like an Engineer: The BEST Solution! | SciShow Kids"
+    },
+    {
+     "channel": "3Blue1Brown",
+     "duration": 1120,
+     "id": "aircAruvnKk",
+     "published": "2017-10-05T15:11:25Z",
+     "thumbnail": "https://i.ytimg.com/vi/aircAruvnKk/mqdefault.jpg",
+     "title": "But what is a neural network? | Deep learning chapter 1"
+    }
+   ]
+  },
+  {
+   "name": "Art and making",
+   "videos": [
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 3625,
+     "id": "dgMuNfIZ0Kw",
+     "published": "2026-10-09T15:00:12Z",
+     "thumbnail": "https://i.ytimg.com/vi/dgMuNfIZ0Kw/mqdefault.jpg",
+     "title": "1 Hour of Halloween Drawing Fun! 🎃 Easy Art Lessons for Kids"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 690,
+     "id": "k6RHLmAL-NU",
+     "published": "2026-10-07T15:00:19Z",
+     "thumbnail": "https://i.ytimg.com/vi/k6RHLmAL-NU/mqdefault.jpg",
+     "title": "How To Draw A Haunted School Bus"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 567,
+     "id": "7tylcOBB2Ts",
+     "published": "2026-10-06T15:00:32Z",
+     "thumbnail": "https://i.ytimg.com/vi/7tylcOBB2Ts/mqdefault.jpg",
+     "title": "How To Draw A Skateboarding Skeleton"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 448,
+     "id": "Y7c7avmlCnw",
+     "published": "2026-10-05T15:41:42Z",
+     "thumbnail": "https://i.ytimg.com/vi/Y7c7avmlCnw/mqdefault.jpg",
+     "title": "How To Draw A Pumpkin Candy Bucket"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 588,
+     "id": "PrjGvyweh8w",
+     "published": "2026-10-01T15:36:47Z",
+     "thumbnail": "https://i.ytimg.com/vi/PrjGvyweh8w/mqdefault.jpg",
+     "title": "How To Draw Marshall From PAW Patrol: The Dino Movie"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 660,
+     "id": "kQcBPgfPEJ8",
+     "published": "2026-09-28T16:07:51Z",
+     "thumbnail": "https://i.ytimg.com/vi/kQcBPgfPEJ8/mqdefault.jpg",
+     "title": "How To Draw A Haunted Monster Truck"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 271,
+     "id": "kjV7CxqY9jU",
+     "published": "2026-09-25T15:06:35Z",
+     "thumbnail": "https://i.ytimg.com/vi/kjV7CxqY9jU/mqdefault.jpg",
+     "title": "How To Draw A Cool Fossil"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 326,
+     "id": "_ZNaRD3zU00",
+     "published": "2026-09-24T19:48:18Z",
+     "thumbnail": "https://i.ytimg.com/vi/_ZNaRD3zU00/mqdefault.jpg",
+     "title": "How To Draw A Wheelbarrow"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 346,
+     "id": "tnmfnRPOBx8",
+     "published": "2026-09-21T14:31:40Z",
+     "thumbnail": "https://i.ytimg.com/vi/tnmfnRPOBx8/mqdefault.jpg",
+     "title": "How To Draw A Funny Hay Bale"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 430,
+     "id": "Tsf8JX_pGPw",
+     "published": "2026-09-18T14:00:30Z",
+     "thumbnail": "https://i.ytimg.com/vi/Tsf8JX_pGPw/mqdefault.jpg",
+     "title": "How To Draw A Parasaurolophus Dinosaur"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 437,
+     "id": "Ya6MJaOt9oI",
+     "published": "2026-09-17T14:00:29Z",
+     "thumbnail": "https://i.ytimg.com/vi/Ya6MJaOt9oI/mqdefault.jpg",
+     "title": "How To Draw Saturn"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 378,
+     "id": "NWngZs2qAD8",
+     "published": "2026-09-16T15:14:21Z",
+     "thumbnail": "https://i.ytimg.com/vi/NWngZs2qAD8/mqdefault.jpg",
+     "title": "How To Draw A Claw Machine"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 702,
+     "id": "RdkYiMTOW1U",
+     "published": "2026-09-14T14:10:05Z",
+     "thumbnail": "https://i.ytimg.com/vi/RdkYiMTOW1U/mqdefault.jpg",
+     "title": "How To Draw A Traffic Cone - Drawing With Shapes"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 713,
+     "id": "QPcSceXFric",
+     "published": "2026-09-11T16:18:16Z",
+     "thumbnail": "https://i.ytimg.com/vi/QPcSceXFric/mqdefault.jpg",
+     "title": "How To Draw A Bean Sprout Folding Surprise"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 431,
+     "id": "p-dHw804GIo",
+     "published": "2026-09-10T14:00:27Z",
+     "thumbnail": "https://i.ytimg.com/vi/p-dHw804GIo/mqdefault.jpg",
+     "title": "How To Draw A Cartoon Ankylosaurus"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 555,
+     "id": "p1lqjlmwfL4",
+     "published": "2026-09-09T14:00:17Z",
+     "thumbnail": "https://i.ytimg.com/vi/p1lqjlmwfL4/mqdefault.jpg",
+     "title": "How To Draw A Starship From SpaceX"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 521,
+     "id": "1dsLJNDn45I",
+     "published": "2026-09-08T14:00:18Z",
+     "thumbnail": "https://i.ytimg.com/vi/1dsLJNDn45I/mqdefault.jpg",
+     "title": "How To Draw School Lunch"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 490,
+     "id": "LNAH9vztxmg",
+     "published": "2026-09-07T14:00:35Z",
+     "thumbnail": "https://i.ytimg.com/vi/LNAH9vztxmg/mqdefault.jpg",
+     "title": "How To Draw A Forklift"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 398,
+     "id": "Y133m0xtC-I",
+     "published": "2026-09-04T14:00:29Z",
+     "thumbnail": "https://i.ytimg.com/vi/Y133m0xtC-I/mqdefault.jpg",
+     "title": "How To Draw A Cool Plane"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 533,
+     "id": "2CiVR8ZOwbM",
+     "published": "2026-09-03T14:00:15Z",
+     "thumbnail": "https://i.ytimg.com/vi/2CiVR8ZOwbM/mqdefault.jpg",
+     "title": "How To Draw The Frog Life Cycle"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 589,
+     "id": "nWZDqKeoxy4",
+     "published": "2026-09-02T14:00:06Z",
+     "thumbnail": "https://i.ytimg.com/vi/nWZDqKeoxy4/mqdefault.jpg",
+     "title": "How To Draw A Cement Truck"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 552,
+     "id": "Hh438OyVVXk",
+     "published": "2026-09-01T14:00:17Z",
+     "thumbnail": "https://i.ytimg.com/vi/Hh438OyVVXk/mqdefault.jpg",
+     "title": "How To Draw A Classroom Pet Hamster"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 390,
+     "id": "1mSoi4N2J4U",
+     "published": "2026-08-31T14:00:38Z",
+     "thumbnail": "https://i.ytimg.com/vi/1mSoi4N2J4U/mqdefault.jpg",
+     "title": "How To Draw Back-To-School Capybara Bean"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 380,
+     "id": "depxT2CPYjA",
+     "published": "2026-08-28T14:28:29Z",
+     "thumbnail": "https://i.ytimg.com/vi/depxT2CPYjA/mqdefault.jpg",
+     "title": "How To Draw A Funny Box Of Crayons"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 386,
+     "id": "pUywCc6URlI",
+     "published": "2026-08-27T14:24:15Z",
+     "thumbnail": "https://i.ytimg.com/vi/pUywCc6URlI/mqdefault.jpg",
+     "title": "How To Draw A Funny School Locker"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 502,
+     "id": "DcHWr651ddA",
+     "published": "2026-08-26T14:00:10Z",
+     "thumbnail": "https://i.ytimg.com/vi/DcHWr651ddA/mqdefault.jpg",
+     "title": "How To Draw A Funny School Notebook"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 619,
+     "id": "nRfEYbCfQQs",
+     "published": "2026-08-20T14:00:39Z",
+     "thumbnail": "https://i.ytimg.com/vi/nRfEYbCfQQs/mqdefault.jpg",
+     "title": "How To Draw A Monster Truck School Bus"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 655,
+     "id": "911cUwXlKXM",
+     "published": "2026-08-19T14:00:25Z",
+     "thumbnail": "https://i.ytimg.com/vi/911cUwXlKXM/mqdefault.jpg",
+     "title": "How To Draw Rhubarb From Paw Patrol The Dino Movie"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 521,
+     "id": "-vQ2_umdFRw",
+     "published": "2026-08-18T16:39:21Z",
+     "thumbnail": "https://i.ytimg.com/vi/-vQ2_umdFRw/mqdefault.jpg",
+     "title": "How To Draw Back To School Pickle The Axolotl"
+    },
+    {
+     "channel": "Art for Kids Hub",
+     "duration": 718,
+     "id": "SzzwCBn08tE",
+     "published": "2026-08-17T14:00:17Z",
+     "thumbnail": "https://i.ytimg.com/vi/SzzwCBn08tE/mqdefault.jpg",
+     "title": "How To Draw Rex From Toy Story"
+    }
+   ]
+  },
+  {
+   "name": "Stories and songs",
+   "videos": [
+    {
+     "channel": "Sesame Street",
+     "duration": 7826,
+     "id": "boR8mKhXJuI",
+     "published": "2026-10-09T11:30:05Z",
+     "thumbnail": "https://i.ytimg.com/vi/boR8mKhXJuI/mqdefault.jpg",
+     "title": "Celebrate Halloween on Sesame Street! 🎃| FOUR Sesame Street Full Episodes"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 7449,
+     "id": "ZEuzViYEC0s",
+     "published": "2026-10-04T11:30:15Z",
+     "thumbnail": "https://i.ytimg.com/vi/ZEuzViYEC0s/mqdefault.jpg",
+     "title": "Elmo's Halloween Festival! 🎃 🦇  | 2 HOURS | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 9717,
+     "id": "typhnoiFdgE",
+     "published": "2026-10-02T11:30:27Z",
+     "thumbnail": "https://i.ytimg.com/vi/typhnoiFdgE/mqdefault.jpg",
+     "title": "Solve Mysteries with Elmo & Abby! 🔍  | FOUR Sesame Street Full Episodes"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 182,
+     "id": "l9OM8aEfuoQ",
+     "published": "2026-09-30T14:00:48Z",
+     "thumbnail": "https://i.ytimg.com/vi/l9OM8aEfuoQ/mqdefault.jpg",
+     "title": "Get Ready to Go Song with Elmo & the Cat in the Hat  👕 👖 | Sesame Street Songs 🎵"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 2119,
+     "id": "IKZYdLG87zU",
+     "published": "2026-09-27T11:30:25Z",
+     "thumbnail": "https://i.ytimg.com/vi/IKZYdLG87zU/mqdefault.jpg",
+     "title": "Let's Play Sesame Street Games with Elmo and Friends! 🤩 | 35 Mins | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 1600,
+     "id": "BxdnuLKCDbs",
+     "published": "2026-09-25T11:30:08Z",
+     "thumbnail": "https://i.ytimg.com/vi/BxdnuLKCDbs/mqdefault.jpg",
+     "title": "Storm on Sesame Street ⛈️ | Full Special"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 3368,
+     "id": "RgLsdBgJqbQ",
+     "published": "2026-09-23T11:30:04Z",
+     "thumbnail": "https://i.ytimg.com/vi/RgLsdBgJqbQ/mqdefault.jpg",
+     "title": "Let's Find Shapes with Elmo! 🔴 🟦 ⭐  | 60 Mins | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 4173,
+     "id": "eRImy5lc3LY",
+     "published": "2026-09-20T11:30:37Z",
+     "thumbnail": "https://i.ytimg.com/vi/eRImy5lc3LY/mqdefault.jpg",
+     "title": "Let's Learn Colors with Elmo!  🌈 🎨 | 65 Min | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 7926,
+     "id": "x48eq6AYfTY",
+     "published": "2026-09-18T11:30:19Z",
+     "thumbnail": "https://i.ytimg.com/vi/x48eq6AYfTY/mqdefault.jpg",
+     "title": "Elmo's Delivery Bike! 🚲🚗 | FOUR Sesame Street Full Episodes"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 319,
+     "id": "0WBlqvBQeOk",
+     "published": "2026-09-13T11:30:28Z",
+     "thumbnail": "https://i.ytimg.com/vi/0WBlqvBQeOk/mqdefault.jpg",
+     "title": "School Talent Show with Elmo, Abby, and Cookie Monster! ⭐ | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 7934,
+     "id": "6fYTzbEKl84",
+     "published": "2026-09-11T11:30:08Z",
+     "thumbnail": "https://i.ytimg.com/vi/6fYTzbEKl84/mqdefault.jpg",
+     "title": "Elmo & Friends Read Their Favorite Books  📖 📕 | FOUR Sesame Street Full Episodes"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 2977,
+     "id": "Cey_YRnOBOs",
+     "published": "2026-09-09T11:30:12Z",
+     "thumbnail": "https://i.ytimg.com/vi/Cey_YRnOBOs/mqdefault.jpg",
+     "title": "E is for Elmo! Learn the Letter E ❤️ | 50 Mins | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 1805,
+     "id": "t7Oq2925CSM",
+     "published": "2026-09-07T11:30:25Z",
+     "thumbnail": "https://i.ytimg.com/vi/t7Oq2925CSM/mqdefault.jpg",
+     "title": "The Monster at the End of This Story with Grover and Elmo! | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 7188,
+     "id": "4uhka2joSB0",
+     "published": "2026-09-06T11:30:30Z",
+     "thumbnail": "https://i.ytimg.com/vi/4uhka2joSB0/mqdefault.jpg",
+     "title": "Back to School with Elmo! 🎒 📓 🍎 | 2 Hours | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 9718,
+     "id": "QdHwcPRqIO8",
+     "published": "2026-09-04T11:30:38Z",
+     "thumbnail": "https://i.ytimg.com/vi/QdHwcPRqIO8/mqdefault.jpg",
+     "title": "Elmo Goes to Preschool! 🚌🖍️ | FOUR Sesame Street Full Episodes"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 3618,
+     "id": "ZrDLVeEqP_4",
+     "published": "2026-08-30T11:30:34Z",
+     "thumbnail": "https://i.ytimg.com/vi/ZrDLVeEqP_4/mqdefault.jpg",
+     "title": "Songs and Games with Elmo and Bounce Patrol! 🎊 | 60 Mins | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 6071,
+     "id": "_GsWbzPUY2A",
+     "published": "2026-08-28T11:30:02Z",
+     "thumbnail": "https://i.ytimg.com/vi/_GsWbzPUY2A/mqdefault.jpg",
+     "title": "Adventures with Cookie Monster! 🍪 | FOUR Sesame Street Full Episodes"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 1874,
+     "id": "0ll7MVpDJbQ",
+     "published": "2026-08-27T11:30:11Z",
+     "thumbnail": "https://i.ytimg.com/vi/0ll7MVpDJbQ/mqdefault.jpg",
+     "title": "Songs About Friendship with Abby & Elmo! ✨ | 32 Mins | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 6071,
+     "id": "HLMVBZ2lGQo",
+     "published": "2026-08-23T11:30:33Z",
+     "thumbnail": "https://i.ytimg.com/vi/HLMVBZ2lGQo/mqdefault.jpg",
+     "title": "Elmo & Friends Makes Art! 🖌️🎨 | FOUR Sesame Street Full Episodes"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 676,
+     "id": "3bSc019PvpM",
+     "published": "2026-08-21T11:30:16Z",
+     "thumbnail": "https://i.ytimg.com/vi/3bSc019PvpM/mqdefault.jpg",
+     "title": "NEW Songs with Elmo, Abby, and Cookie Monster! 🎵 ✨ | 10 Mins | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 185,
+     "id": "mIXu9K24g30",
+     "published": "2026-08-19T11:30:20Z",
+     "thumbnail": "https://i.ytimg.com/vi/mIXu9K24g30/mqdefault.jpg",
+     "title": "Go for the Gold 🌟(Golden Parody) | Sesame Street Songs"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 6357,
+     "id": "d5lKPl5qCkk",
+     "published": "2026-08-16T11:30:10Z",
+     "thumbnail": "https://i.ytimg.com/vi/d5lKPl5qCkk/mqdefault.jpg",
+     "title": "Fun with STEM  🔭 🧮  Building and Counting with Elmo! | 100 Mins | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 6133,
+     "id": "yaD0n5awR_E",
+     "published": "2026-08-14T11:30:30Z",
+     "thumbnail": "https://i.ytimg.com/vi/yaD0n5awR_E/mqdefault.jpg",
+     "title": "Dinosaur Time with Elmo!  🦖 🦕 | FOUR Sesame Street Full Episodes"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 2945,
+     "id": "MtVywDiugYY",
+     "published": "2026-08-09T11:30:05Z",
+     "thumbnail": "https://i.ytimg.com/vi/MtVywDiugYY/mqdefault.jpg",
+     "title": "Elmo's Arts & Crafts! 🎨🖍️ | 49 Mins | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 9564,
+     "id": "bHXN_IxT19E",
+     "published": "2026-08-07T11:30:04Z",
+     "thumbnail": "https://i.ytimg.com/vi/bHXN_IxT19E/mqdefault.jpg",
+     "title": "Pretend Play and Dress Up with Elmo & Abby  🤖 🦸 | 2 HOURS of Sesame Street Full Episodes"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 248,
+     "id": "en3jSxXwPpE",
+     "published": "2026-08-05T11:30:14Z",
+     "thumbnail": "https://i.ytimg.com/vi/en3jSxXwPpE/mqdefault.jpg",
+     "title": "Where is Elmo? Hidey Tag Song with Bounce Patrol! 🏃‍➡️| Sesame Street Songs"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 1412,
+     "id": "I3MOtV7J82o",
+     "published": "2026-08-02T11:30:18Z",
+     "thumbnail": "https://i.ytimg.com/vi/I3MOtV7J82o/mqdefault.jpg",
+     "title": "Number of the Day Song with Elmo & Puppy! 🐶 Count to 20 | Sesame Street"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 9718,
+     "id": "C_Qfr56WG48",
+     "published": "2026-07-31T11:30:11Z",
+     "thumbnail": "https://i.ytimg.com/vi/C_Qfr56WG48/mqdefault.jpg",
+     "title": "Time to Count with Elmo and Friends 🔢 | FOUR Sesame Street Full Episodes"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 1053,
+     "id": "ECRFNwH_ZGI",
+     "published": "2026-07-26T11:30:26Z",
+     "thumbnail": "https://i.ytimg.com/vi/ECRFNwH_ZGI/mqdefault.jpg",
+     "title": "Got To Go and MORE Music with Elmo & Friends 🌟 | Sesame Street Songs 🎵"
+    },
+    {
+     "channel": "Sesame Street",
+     "duration": 7930,
+     "id": "Lt0Uy0Av02A",
+     "published": "2026-07-24T11:30:15Z",
+     "thumbnail": "https://i.ytimg.com/vi/Lt0Uy0Av02A/mqdefault.jpg",
+     "title": "Make Music with Elmo & Friends!  🎹 🎻 | FOUR Sesame Street Full Episodes"
+    }
+   ]
+  }
+ ],
+ "version": 1
+}

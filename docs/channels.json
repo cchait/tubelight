@@ -1,0 +1,30 @@
+{
+ "channels": {
+  "UC5XMF3Inoi8R9nSI8ChOsdQ": {
+   "handle": "@artforkidshub",
+   "title": "Art for Kids Hub",
+   "uploads": "UU5XMF3Inoi8R9nSI8ChOsdQ"
+  },
+  "UCRFIPG2u1DxKLNuE3y2SjHA": {
+   "handle": "@scishowkids",
+   "title": "SciShow Kids",
+   "uploads": "UURFIPG2u1DxKLNuE3y2SjHA"
+  },
+  "UCoookXUzPciGrEZEXmh4Jjg": {
+   "handle": "@sesamestreet",
+   "title": "Sesame Street",
+   "uploads": "UUoookXUzPciGrEZEXmh4Jjg"
+  },
+  "UCsooa4yRKGN_zEE8iknghZA": {
+   "handle": "@teded",
+   "title": "TED-Ed",
+   "uploads": "UUsooa4yRKGN_zEE8iknghZA"
+  }
+ },
+ "handles": {
+  "@artforkidshub": "UC5XMF3Inoi8R9nSI8ChOsdQ",
+  "@scishowkids": "UCRFIPG2u1DxKLNuE3y2SjHA",
+  "@sesamestreet": "UCoookXUzPciGrEZEXmh4Jjg",
+  "@teded": "UCsooa4yRKGN_zEE8iknghZA"
+ }
+}
