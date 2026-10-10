@@ -7,6 +7,11 @@ script and one workflow. Please keep it that way.
 
 - **No framework, no build step.** The site stays plain HTML, CSS and JS that
   GitHub Pages can serve as-is.
+- **Design system.** The CSS follows Untitled UI's tokens (gray/brand scales,
+  type scale, 8px radii, shadow and focus-ring recipes) as plain custom
+  properties in `docs/style.css`. Add components in that vocabulary rather than
+  importing a UI library. Icons are inline SVG symbols in `index.html`, 24px
+  grid, 2px round stroke.
 - **Only `requests` and `pyyaml`** as Python dependencies for `refresh.py`.
 - **Never call `search.list`.** It costs 100 quota units; everything we need is
   available for 1 unit per call.

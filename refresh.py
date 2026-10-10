@@ -341,7 +341,32 @@ def build_shelf(yt: YouTube, shelf: dict, settings: dict, blocked: set, cache: d
         print(f"  single videos: {len([v for v in singles if v in collected])}")
 
     videos = sorted(collected.values(), key=lambda v: (v["published"], v["id"]), reverse=True)
-    return {"name": name, "videos": [public_video(v) for v in videos]}
+
+    # Channels of this shelf: allowlisted ones first, in allowlist order, then any
+    # other channel that appeared through a playlist or a single video.
+    order: list[str] = []
+    for cid in channel_ids.values():
+        if cid not in order:
+            order.append(cid)
+    for v in videos:
+        if v["channelId"] and v["channelId"] not in order:
+            order.append(v["channelId"])
+    counts: dict[str, int] = {}
+    names: dict[str, str] = {}
+    for v in videos:
+        counts[v["channelId"]] = counts.get(v["channelId"], 0) + 1
+        names.setdefault(v["channelId"], v["channel"])
+    shelf_channels = [
+        {
+            "id": cid,
+            "name": cache["channels"].get(cid, {}).get("title") or names.get(cid, ""),
+            "avatar": cache["channels"].get(cid, {}).get("avatar", ""),
+            "count": counts.get(cid, 0),
+        }
+        for cid in order
+        if counts.get(cid)
+    ]
+    return {"name": name, "channels": shelf_channels, "videos": [public_video(v) for v in videos]}
 
 
 # ------------------------------------------------------------------------- main
@@ -378,7 +403,7 @@ def main() -> int:
         if cid in cache["channels"]
     }
     catalog = {
-        "version": 2,
+        "version": 3,
         "channels": channels,
         "settings": {
             "min_duration_seconds": settings["min_duration_seconds"],

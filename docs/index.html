@@ -6,24 +6,57 @@
   <meta name="color-scheme" content="light dark">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>tubelight</title>
-  <meta name="description" content="A kids' video shelf: only allowlisted YouTube channels, played in YouTube's embedded player.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c2521f'/%3E%3Cpath d='M12 9l12 7-12 7z' fill='%23fff'/%3E%3C/svg%3E">
+  <meta name="description" content="A kids' video library: only allowlisted YouTube channels, played in YouTube's embedded player.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237F56D9'/%3E%3Cpath d='M12 9l12 7-12 7z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
-<body data-page="index">
-  <header class="top">
-    <a class="brand" href="index.html" aria-label="tubelight home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M12 9l12 7-12 7z" fill="var(--accent-fg)"/></svg>
-      tubelight
-    </a>
-    <form class="search" action="index.html" method="get" role="search">
-      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input type="search" id="q" name="q" placeholder="Search the shelves" aria-label="Search videos on the shelves" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
-    </form>
-  </header>
-  <main id="app">
-    <noscript><div class="notice"><h2>JavaScript is off</h2><p>tubelight needs JavaScript to list the videos.</p></div></noscript>
-  </main>
+<body>
+  <!-- Icon sprite, Untitled UI line style: 24px grid, 2px stroke, round caps -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><path d="M21 21l-4.35-4.35M19 11a8 8 0 11-16 0 8 8 0 0116 0z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M9 21V13.6c0-.56 0-.84.11-1.05a1 1 0 01.44-.44C9.76 12 10.04 12 10.6 12h2.8c.56 0 .84 0 1.05.11a1 1 0 01.44.44c.11.21.11.49.11 1.05V21M11.02 2.76L4.24 8.04c-.46.35-.68.53-.85.75a2 2 0 00-.33.66C3 9.72 3 10 3 10.58v7.62c0 1.12 0 1.68.22 2.11a2 2 0 00.87.87C4.52 21.4 5.08 21.4 6.2 21.4h11.6c1.12 0 1.68 0 2.11-.22a2 2 0 00.87-.87c.22-.43.22-.99.22-2.11v-7.62c0-.58 0-.86-.07-1.13a2 2 0 00-.33-.66c-.17-.22-.4-.4-.85-.75l-6.78-5.28c-.35-.27-.52-.41-.72-.46a1 1 0 00-.5 0c-.2.05-.37.19-.72.46z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path d="M22.7 13.5a10 10 0 11-2.2-7.6M22 4v6h-6M12 7v5l3 2"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><path d="M7.5 12l3 3 6-6M22 12a10 10 0 11-20 0 10 10 0 0120 0z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M17 7L7 17M7 7l10 10"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5m0 0l7 7m-7-7l7-7"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M5 4.99c0-.98 0-1.47.2-1.74a1 1 0 01.73-.4c.34-.03.75.24 1.57.77l10.86 7.01c.71.46 1.07.69 1.19.98a1 1 0 010 .78c-.12.29-.48.52-1.19.98L6.5 20.38c-.82.53-1.23.8-1.57.77a1 1 0 01-.73-.4c-.2-.27-.2-.76-.2-1.74V4.99z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M2 12l9.64 4.82c.13.07.2.1.27.11a.5.5 0 00.18 0c.07-.01.14-.04.27-.11L22 12M2 17l9.64 4.82c.13.07.2.1.27.11a.5.5 0 00.18 0c.07-.01.14-.04.27-.11L22 17M2 7l9.64-4.82c.13-.07.2-.1.27-.11a.5.5 0 01.18 0c.07.01.14.04.27.11L22 7l-9.64 4.82c-.13.07-.2.1-.27.11a.5.5 0 01-.18 0c-.07-.01-.14-.04-.27-.11L2 7z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><path d="M8.4 3H4.6c-.56 0-.84 0-1.05.11a1 1 0 00-.44.44C3 3.76 3 4.04 3 4.6v3.8c0 .56 0 .84.11 1.05a1 1 0 00.44.44C3.76 10 4.04 10 4.6 10h3.8c.56 0 .84 0 1.05-.11a1 1 0 00.44-.44C10 9.24 10 8.96 10 8.4V4.6c0-.56 0-.84-.11-1.05a1 1 0 00-.44-.44C9.24 3 8.96 3 8.4 3zM19.4 3h-3.8c-.56 0-.84 0-1.05.11a1 1 0 00-.44.44C14 3.76 14 4.04 14 4.6v3.8c0 .56 0 .84.11 1.05a1 1 0 00.44.44c.21.11.49.11 1.05.11h3.8c.56 0 .84 0 1.05-.11a1 1 0 00.44-.44C21 9.24 21 8.96 21 8.4V4.6c0-.56 0-.84-.11-1.05a1 1 0 00-.44-.44C20.24 3 19.96 3 19.4 3zM19.4 14h-3.8c-.56 0-.84 0-1.05.11a1 1 0 00-.44.44c-.11.21-.11.49-.11 1.05v3.8c0 .56 0 .84.11 1.05a1 1 0 00.44.44c.21.11.49.11 1.05.11h3.8c.56 0 .84 0 1.05-.11a1 1 0 00.44-.44c.11-.21.11-.49.11-1.05v-3.8c0-.56 0-.84-.11-1.05a1 1 0 00-.44-.44C20.24 14 19.96 14 19.4 14zM8.4 14H4.6c-.56 0-.84 0-1.05.11a1 1 0 00-.44.44C3 14.76 3 15.04 3 15.6v3.8c0 .56 0 .84.11 1.05a1 1 0 00.44.44C3.76 21 4.04 21 4.6 21h3.8c.56 0 .84 0 1.05-.11a1 1 0 00.44-.44c.11-.21.11-.49.11-1.05v-3.8c0-.56 0-.84-.11-1.05a1 1 0 00-.44-.44C9.24 14 8.96 14 8.4 14z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M16 6v-.8c0-1.12 0-1.68-.22-2.11a2 2 0 00-.87-.87C14.48 2 13.92 2 12.8 2h-1.6c-1.12 0-1.68 0-2.11.22a2 2 0 00-.87.87C8 3.52 8 4.08 8 5.2V6m2 5.5v5m4-5v5M3 6h18m-2 0v11.2c0 1.68 0 2.52-.33 3.16a3 3 0 01-1.31 1.31c-.64.33-1.48.33-3.16.33H9.8c-1.68 0-2.52 0-3.16-.33a3 3 0 01-1.31-1.31C5 19.72 5 18.88 5 17.2V6"/></symbol>
+  </svg>
+
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar" aria-label="Library">
+      <div class="sidebar-head">
+        <a class="brand" href="index.html" data-route="home">
+          <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="#i-play"/></svg></span>
+          tubelight
+        </a>
+        <button class="icon-btn sidebar-close" id="sidebar-close" type="button" aria-label="Close menu"><svg class="icon"><use href="#i-x"/></svg></button>
+      </div>
+      <nav class="nav" id="nav" aria-label="Shelves and channels"></nav>
+      <div class="sidebar-foot" id="sidebar-foot"></div>
+    </aside>
+    <div class="backdrop" id="backdrop" hidden></div>
+
+    <div class="content">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button>
+        <form class="search" id="search-form" role="search" action="index.html" method="get">
+          <svg class="icon search-icon" aria-hidden="true"><use href="#i-search"/></svg>
+          <input class="input" type="search" id="q" name="q" placeholder="Search videos and channels" aria-label="Search videos and channels" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+        </form>
+      </header>
+      <main class="view" id="view" tabindex="-1">
+        <noscript><div class="empty"><h2>JavaScript is off</h2><p>tubelight needs JavaScript to show the library.</p></div></noscript>
+      </main>
+    </div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>

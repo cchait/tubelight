@@ -42,8 +42,14 @@ allowlist.yaml  ──refresh.py──▶  docs/catalog.json  ──GitHub Pages
 - Each shelf shows the newest `max_videos_per_channel` videos per channel as a
   rolling window: new uploads appear after the next refresh and the oldest
   drop off. View counts and "3 days ago" labels are as of the last refresh.
-- `docs/` is a static site: shelves of thumbnails on `index.html`, the player
-  on `watch.html?v=<id>`. It refuses to play any id that is not in the catalog.
+- `docs/` is a static single-page app: a left pane with shelves and the
+  channels in them, channel pages, search over the catalog, a player page with
+  a "Mark as watched" toggle, plus "Continue watching" and "Watched" lists kept
+  in the browser. Routes are plain query strings (`?s=`, `?c=`, `?q=`, `?v=`),
+  so GitHub Pages needs no rewrites. It refuses to play any id that is not in
+  the catalog. The look follows the Untitled UI design language (Inter, its
+  gray and brand scales, inputs, buttons, sidebar navigation) written in plain
+  CSS; the font is vendored in `docs/fonts/` so no third-party request is made.
 - A GitHub Action runs the refresh every day at 02:00 UTC and commits the
   catalog only when something changed.
 
@@ -154,6 +160,8 @@ load. Remove the lines afterwards.
   from the same channel, but they are still YouTube's choice, not yours.
 - **A fixed allowlist needs pruning.** Channels change direction; glance at
   the shelves every few weeks and use `blocked_videos` for one-offs.
+- **Watched state is per device and per browser.** There are no accounts, so
+  two kids sharing a tablet share one watched list.
 - **Shorts are filtered by duration**, so a channel that only posts Shorts
   will show nothing. Lower `min_duration_seconds` if that is what you want.
 - **DNS blocking is only as good as the device's DNS.** Browsers with
@@ -162,8 +170,9 @@ load. Remove the lines afterwards.
 ## Privacy
 
 The site sets no cookies and loads nothing from third parties except YouTube's
-player and thumbnails. "Continue watching" is kept in the browser's
-localStorage on the device and never leaves it. The `youtube-nocookie.com`
+player, thumbnails and channel avatars. "Continue watching", "Watched" and the
+expanded shelves in the left pane are kept in the browser's localStorage on
+the device and never leave it; they are per device, not per child. The `youtube-nocookie.com`
 embed is YouTube's privacy-enhanced mode; see Google's privacy policy for what
 it does and does not store.
 
