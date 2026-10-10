@@ -45,6 +45,11 @@
    "title": "Physics Girl",
    "uploads": "UU7DdEm33SyaTDtWYGO2CwdA"
   },
+  "UC9cvVvlvr-qBssphm1EdYGQ": {
+   "handle": "@andycrowley",
+   "title": "Andy Guitar",
+   "uploads": "UU9cvVvlvr-qBssphm1EdYGQ"
+  },
   "UCBNkm8o5LiEVLxO8w0p2sfQ": {
    "handle": "@justinguitar",
    "title": "JustinGuitar",
@@ -54,6 +59,11 @@
    "handle": "@chessnetwork",
    "title": "ChessNetwork",
    "uploads": "UUCDOQrpqLqKVcTCKzqarxLg"
+  },
+  "UCDPk9MG2RexnOMGTD-YnSnA": {
+   "handle": "@natgeoanimals",
+   "title": "Nat Geo Animals",
+   "uploads": "UUDPk9MG2RexnOMGTD-YnSnA"
   },
   "UCHnyfMqiRRG1u-2MsSQLbXA": {
    "handle": "@veritasium",
@@ -150,6 +160,11 @@
    "title": "SciShow",
    "uploads": "UUZYTClx2T1of7BRZ86-8fow"
   },
+  "UC_DmCvOP5Q_eBMRDvqqRXjg": {
+   "handle": "@pianoteofficial",
+   "title": "Pianote",
+   "uploads": "UU_DmCvOP5Q_eBMRDvqqRXjg"
+  },
   "UC_Oa7Ph3v94om5OyxY1nPKg": {
    "handle": "@pauldavids",
    "title": "Paul Davids",
@@ -189,6 +204,11 @@
    "handle": "@chesskid",
    "title": "Thai Nguyen",
    "uploads": "UUjQeZUhjFaRLNWv24J3dWeA"
+  },
+  "UCj_-bWUM8fK-PEQCNFwWq8w": {
+   "handle": "@chesskidofficial",
+   "title": "ChessKid",
+   "uploads": "UUj_-bWUM8fK-PEQCNFwWq8w"
   },
   "UCjcQmKeifVUUH5s4E4OrMhg": {
    "handle": "@scratchteam",
@@ -259,6 +279,11 @@
    "handle": "@scottmanley",
    "title": "Scott Manley",
    "uploads": "UUxzC4EngIsMrPmbm6Nxvb-A"
+  },
+  "UCzR-rom72PHN9Zg7RML9EbA": {
+   "handle": "@eons",
+   "title": "PBS Eons",
+   "uploads": "UUzR-rom72PHN9Zg7RML9EbA"
   }
  },
  "handles": {
@@ -273,6 +298,7 @@
   "@bravewilderness": "UC6E2mP01ZLH_kbAyeazCNdg",
   "@chess": "UC5kS0l76kC0xOzMPtOmSFGw",
   "@chesskid": "UCjQeZUhjFaRLNWv24J3dWeA",
+  "@chesskidofficial": "UCj_-bWUM8fK-PEQCNFwWq8w",
   "@chessnetwork": "UCCDOQrpqLqKVcTCKzqarxLg",
   "@codeorg": "UCJyEBMU1xVP2be1-AoGS1BA",
   "@crashcoursekids": "UCONtPx56PSebXJOxbFv-2jQ",
@@ -292,12 +318,14 @@
   "@nasa": "UCLA_DiR1FfKNvjuUpBHmylQ",
   "@nasajpl": "UCryGec9PdUCLjpJW2mgCuLw",
   "@natgeo": "UCpVm7bg6pXKo1Pr6k5kxG9A",
+  "@natgeoanimals": "UCDPk9MG2RexnOMGTD-YnSnA",
   "@natgeokids": "UCXVCgDuD_QCkI7gTKU7-tpg",
   "@nhrl": "UChgAZxOWR0S3Q376oAodGjQ",
   "@novapbs": "UCjHz5SVHeMT0AViCYZvsGDA",
   "@numberphile": "UCoxcjq-8xIDTYp3uz647V5A",
   "@pauldavids": "UC_Oa7Ph3v94om5OyxY1nPKg",
   "@physicsgirl": "UC7DdEm33SyaTDtWYGO2CwdA",
+  "@pianoteofficial": "UC_DmCvOP5Q_eBMRDvqqRXjg",
   "@pianovideolessons": "UCRJP1zG5H2bbeBxf364ZsJg",
   "@robotwars": "UC4niVdYzgGSjmkgXHoWmpYg",
   "@rousseau": "UCPZUQqtVDmcjm4NY5FkzqLA",
