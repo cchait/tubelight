@@ -1,9 +1,10 @@
 # tubelight
 
 A kids' video site that shows **only the YouTube channels and videos a parent
-has allowlisted**. It hosts no video and has no search, no comments, no
-recommendations and no links out. Everything plays through YouTube's own
-embedded player on `www.youtube-nocookie.com`.
+has allowlisted**. It hosts no video and has no YouTube search, no comments, no
+recommendations and no links out. The search box only filters the videos
+already on the shelves. Everything plays through YouTube's own embedded
+player on `www.youtube-nocookie.com`.
 
 The site itself cannot stop a child from opening youtube.com. Enforcement
 happens on the kids' devices: block `youtube.com`, `www.youtube.com` and
@@ -34,10 +35,13 @@ allowlist.yaml  ──refresh.py──▶  docs/catalog.json  ──GitHub Pages
 - `allowlist.yaml` is the only file you edit: shelves of channel handles,
   playlists and single videos, plus a few settings and a block list.
 - `refresh.py` resolves handles once (cached in `docs/channels.json`), reads
-  each channel's uploads playlist, fetches durations, applies your settings and
-  writes `docs/catalog.json`. It uses only 1-unit API calls and prints the
-  quota it spent. A typical allowlist of ten channels costs about 40 units of
-  the 10,000 you get per day.
+  each channel's uploads playlist, fetches durations and view counts, applies
+  your settings and writes `docs/catalog.json`. It uses only 1-unit API calls
+  and prints the quota it spent. A typical allowlist of ten channels costs
+  about 40 units of the 10,000 you get per day; fifty channels about 200.
+- Each shelf shows the newest `max_videos_per_channel` videos per channel as a
+  rolling window: new uploads appear after the next refresh and the oldest
+  drop off. View counts and "3 days ago" labels are as of the last refresh.
 - `docs/` is a static site: shelves of thumbnails on `index.html`, the player
   on `watch.html?v=<id>`. It refuses to play any id that is not in the catalog.
 - A GitHub Action runs the refresh every day at 02:00 UTC and commits the
@@ -106,6 +110,7 @@ simple:
 | `www.youtube-nocookie.com`   | allow  | the embedded player                    |
 | `*.googlevideo.com`          | allow  | the video stream                       |
 | `*.ytimg.com`                | allow  | thumbnails and player assets           |
+| `yt3.ggpht.com`              | allow  | channel avatars (cosmetic, optional)   |
 
 ### AdGuard Home / AdGuard DNS
 

@@ -13,6 +13,8 @@ script and one workflow. Please keep it that way.
 - **Respect YouTube's terms.** Do not overlay, crop, resize or restyle the
   embedded player, hide its branding, or add anything that downloads video.
   Everything we add lives outside the iframe.
+- **No YouTube search.** The search box filters `catalog.json` in the browser
+  and must never call YouTube; the allowlist is the whole universe.
 - **No external links.** The site must not link to youtube.com or anywhere
   else. Kids use this with youtube.com blocked at DNS; a link that leads to a
   dead page is confusing, a link that works is a hole.

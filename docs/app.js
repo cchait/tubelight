@@ -1,7 +1,8 @@
 /* tubelight front end. Plain JS, no build step.
  * Loads catalog.json, renders shelves (index) or the player (watch).
- * Nothing here talks to youtube.com: the only YouTube host is
- * www.youtube-nocookie.com (player) and i.ytimg.com (thumbnails). */
+ * Nothing here talks to youtube.com: the only YouTube hosts are
+ * www.youtube-nocookie.com (player), i.ytimg.com (thumbnails) and
+ * yt3.ggpht.com (channel avatars). Search filters the local catalog only. */
 (function () {
   "use strict";
 
@@ -9,6 +10,7 @@
   var EMBED_PARAMS = "rel=0&iv_load_policy=3&playsinline=1";
   var LS_KEY = "tubelight.recent";
   var RECENT_MAX = 12;
+  var SEARCH_MAX = 200;
 
   // ---- storage (localStorage may be unavailable or full) ----
   function readRecent() {
@@ -39,15 +41,35 @@
     var mm = h ? String(m).padStart(2, "0") : String(m);
     return (h ? h + ":" : "") + mm + ":" + String(sec).padStart(2, "0");
   }
+  var compact = null;
+  try { compact = new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }); } catch (e) { /* old browser */ }
+  function fmtViews(n) {
+    if (typeof n !== "number" || !isFinite(n)) return "";
+    var s = compact ? compact.format(n) : String(n);
+    return s + (n === 1 ? " view" : " views");
+  }
+  function timeAgo(iso) {
+    var t = Date.parse(iso || "");
+    if (isNaN(t)) return "";
+    var d = Math.max(0, (Date.now() - t) / 1000);
+    var units = [[31536000, "year"], [2592000, "month"], [604800, "week"], [86400, "day"], [3600, "hour"], [60, "minute"]];
+    for (var i = 0; i < units.length; i++) {
+      var n = Math.floor(d / units[i][0]);
+      if (n >= 1) return n + " " + units[i][1] + (n === 1 ? "" : "s") + " ago";
+    }
+    return "just now";
+  }
   function qs(name) {
     try { return new URLSearchParams(location.search).get(name); } catch (e) { return null; }
   }
   function isVideoId(id) { return typeof id === "string" && /^[A-Za-z0-9_-]{11}$/.test(id); }
 
-  function card(video, shelfIndex, onClick) {
+  // ---- card: thumbnail, then avatar + title + channel + "views · time ago" ----
+  function card(catalog, video, shelfIndex, onClick) {
     var a = el("a", "card");
     a.href = "watch.html?v=" + encodeURIComponent(video.id) + "&s=" + shelfIndex;
     a.setAttribute("aria-label", video.title + ", " + video.channel);
+
     var th = el("div", "thumb");
     var img = el("img");
     img.src = video.thumbnail;
@@ -57,8 +79,28 @@
     th.appendChild(img);
     if (video.duration) th.appendChild(el("span", "dur", fmtDuration(video.duration)));
     a.appendChild(th);
-    a.appendChild(el("div", "title", video.title));
-    a.appendChild(el("div", "chan", video.channel));
+
+    var info = el("div", "info");
+    var chan = (catalog.channels || {})[video.channelId];
+    var av = el("div", "avatar");
+    if (chan && chan.avatar) {
+      var ai = el("img");
+      ai.src = chan.avatar; ai.alt = ""; ai.loading = "lazy"; ai.width = 36; ai.height = 36;
+      av.appendChild(ai);
+    } else {
+      av.textContent = (video.channel || "?").charAt(0).toUpperCase();
+    }
+    info.appendChild(av);
+    var text = el("div", "text");
+    text.appendChild(el("div", "title", video.title));
+    text.appendChild(el("div", "chan", video.channel));
+    var bits = [];
+    var v = fmtViews(video.views); if (v) bits.push(v);
+    var t = timeAgo(video.published); if (t) bits.push(t);
+    if (bits.length) text.appendChild(el("div", "stats", bits.join(" · ")));
+    info.appendChild(text);
+    a.appendChild(info);
+
     if (onClick) a.addEventListener("click", function (e) { e.preventDefault(); onClick(video); });
     return a;
   }
@@ -82,6 +124,7 @@
       return r.json();
     }).then(function (c) {
       if (!c || !Array.isArray(c.shelves)) throw new Error("catalog.json has no shelves");
+      c.channels = c.channels || {};
       return c;
     });
   }
@@ -102,33 +145,96 @@
     return map;
   }
 
+  // ---- local search: every word must appear in title or channel name ----
+  function searchCatalog(catalog, query) {
+    var words = query.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!words.length) return [];
+    var out = [], seen = {};
+    catalog.shelves.forEach(function (shelf, si) {
+      shelf.videos.forEach(function (v) {
+        if (seen[v.id]) return;
+        var hay = (v.title + " " + v.channel).toLowerCase();
+        for (var i = 0; i < words.length; i++) if (hay.indexOf(words[i]) === -1) return;
+        seen[v.id] = true;
+        out.push({ video: v, shelf: si });
+      });
+    });
+    out.sort(function (a, b) { return a.video.published < b.video.published ? 1 : -1; });
+    return out.slice(0, SEARCH_MAX);
+  }
+
   // ---- index page ----
   function renderIndex(root, catalog) {
-    root.innerHTML = "";
     var byId = indexById(catalog);
-    var recent = readRecent().filter(function (id) { return byId[id]; });
-    if (recent.length) {
-      var sec = el("section", "shelf");
-      sec.appendChild(el("h2", null, "Continue watching"));
-      var row = el("div", "row");
-      recent.forEach(function (id) { row.appendChild(card(byId[id].video, byId[id].shelf)); });
-      sec.appendChild(row);
+    var input = document.getElementById("q");
+
+    function shelvesView() {
+      root.innerHTML = "";
+      var recent = readRecent().filter(function (id) { return byId[id]; });
+      if (recent.length) {
+        var sec = el("section", "shelf");
+        sec.appendChild(el("h2", null, "Continue watching"));
+        var row = el("div", "row");
+        recent.forEach(function (id) { row.appendChild(card(catalog, byId[id].video, byId[id].shelf)); });
+        sec.appendChild(row);
+        root.appendChild(sec);
+      }
+      var any = false;
+      catalog.shelves.forEach(function (shelf, si) {
+        if (!shelf.videos.length) return;
+        any = true;
+        var sec = el("section", "shelf");
+        sec.appendChild(el("h2", null, shelf.name));
+        var row = el("div", "row");
+        shelf.videos.forEach(function (v) { row.appendChild(card(catalog, v, si)); });
+        sec.appendChild(row);
+        root.appendChild(sec);
+      });
+      if (!any) notice(root, "The allowlist is empty", [
+        ["Add channels to ", "allowlist.yaml", " and run the refresh again."]
+      ]);
+    }
+
+    function searchView(q) {
+      var hits = searchCatalog(catalog, q);
+      root.innerHTML = "";
+      var sec = el("section", "shelf results");
+      sec.appendChild(el("h2", null, hits.length
+        ? hits.length + (hits.length === SEARCH_MAX ? "+" : "") + " result" + (hits.length === 1 ? "" : "s") + " for “" + q + "”"
+        : "Nothing on the list matches “" + q + "”"));
+      if (hits.length) {
+        var grid = el("div", "grid");
+        hits.forEach(function (h) { grid.appendChild(card(catalog, h.video, h.shelf)); });
+        sec.appendChild(grid);
+      } else {
+        sec.appendChild(el("p", "hint", "Search only covers videos already on the shelves."));
+      }
       root.appendChild(sec);
     }
-    var any = false;
-    catalog.shelves.forEach(function (shelf, si) {
-      if (!shelf.videos.length) return;
-      any = true;
-      var sec = el("section", "shelf");
-      sec.appendChild(el("h2", null, shelf.name));
-      var row = el("div", "row");
-      shelf.videos.forEach(function (v) { row.appendChild(card(v, si)); });
-      sec.appendChild(row);
-      root.appendChild(sec);
-    });
-    if (!any) notice(root, "The allowlist is empty", [
-      ["Add channels to ", "allowlist.yaml", " and run the refresh again."]
-    ]);
+
+    var current = null;
+    function apply(q, replaceUrl) {
+      q = (q || "").trim();
+      if (q === current) return;
+      current = q;
+      if (q) searchView(q); else shelvesView();
+      if (replaceUrl) {
+        try { history.replaceState(null, "", q ? "index.html?q=" + encodeURIComponent(q) : "index.html"); } catch (e) { /* ignore */ }
+      }
+    }
+
+    var initial = qs("q") || "";
+    if (input) {
+      input.value = initial;
+      var timer = null;
+      input.addEventListener("input", function () {
+        clearTimeout(timer);
+        timer = setTimeout(function () { apply(input.value, true); }, 120);
+      });
+      input.form.addEventListener("submit", function (e) { e.preventDefault(); apply(input.value, true); input.blur(); });
+      input.addEventListener("search", function () { apply(input.value, true); });
+    }
+    apply(initial, false);
   }
 
   // ---- watch page ----
@@ -151,7 +257,7 @@
         moreTitle.textContent = "Pick something else";
         grid.innerHTML = "";
         (catalog.shelves[0] ? catalog.shelves[0].videos : []).forEach(function (v) {
-          grid.appendChild(card(v, 0, function (vv) { show(vv.id, 0, true, true); }));
+          grid.appendChild(card(catalog, v, 0, function (vv) { show(vv.id, 0, true, true); }));
         });
         return;
       }
@@ -174,12 +280,15 @@
       frame.src = src;
 
       titleEl.textContent = v.title;
-      chanEl.textContent = v.channel + (v.duration ? " · " + fmtDuration(v.duration) : "");
+      var bits = [v.channel];
+      var vw = fmtViews(v.views); if (vw) bits.push(vw);
+      var ta = timeAgo(v.published); if (ta) bits.push(ta);
+      chanEl.textContent = bits.join(" · ");
       document.title = v.title + " · tubelight";
       moreTitle.textContent = "More from " + shelf.name;
       grid.innerHTML = "";
       shelf.videos.forEach(function (other) {
-        var c = card(other, si, function (vv) { show(vv.id, si, true, true); });
+        var c = card(catalog, other, si, function (vv) { show(vv.id, si, true, true); });
         if (other.id === id) c.classList.add("now");
         grid.appendChild(c);
       });

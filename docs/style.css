@@ -67,6 +67,22 @@ button { font: inherit; }
 }
 .back:active { transform: scale(0.97); }
 
+/* Search over the local catalog (never YouTube) */
+.search { flex: 1 1 200px; max-width: 560px; margin-left: auto; position: relative; }
+.search input {
+  width: 100%; min-height: 44px; padding: 8px 14px 8px 42px;
+  font: inherit; color: var(--fg); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px;
+  -webkit-appearance: none; appearance: none;
+}
+.search input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+.search input::-webkit-search-decoration { -webkit-appearance: none; }
+.search svg {
+  position: absolute; left: 14px; top: 50%; width: 20px; height: 20px;
+  transform: translateY(-50%); color: var(--muted); pointer-events: none;
+}
+.results .hint { margin: 0 16px; color: var(--muted); }
+
 main {
   max-width: 1400px; margin: 0 auto;
   padding: 16px 0 48px;
@@ -127,12 +143,23 @@ main {
   background: rgba(0, 0, 0, 0.75); color: #fff;
   font-size: 0.8rem; font-weight: 600; font-variant-numeric: tabular-nums;
 }
+/* Below the thumbnail: avatar on the left, title / channel / stats on the right */
+.info { display: flex; gap: 10px; margin-top: 10px; padding: 0 2px; }
+.avatar {
+  flex: none; width: 36px; height: 36px; border-radius: 50%;
+  background: var(--line); color: var(--muted);
+  display: grid; place-items: center; font-weight: 700; font-size: 0.95rem;
+  overflow: hidden;
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+.text { min-width: 0; flex: 1; }
 .card .title {
-  margin: 8px 2px 0; font-weight: 600; line-height: 1.3;
+  margin: 0; font-weight: 600; line-height: 1.3;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
   text-wrap: pretty;
 }
-.card .chan { margin: 2px 2px 0; color: var(--muted); font-size: 0.9rem; }
+.card .chan { margin: 3px 0 0; color: var(--muted); font-size: 0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card .stats { margin: 0; color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
 .card.now .thumb { outline: 3px solid var(--accent); }
 
 /* Watch page. The player is never overlaid, cropped or resized away from 16:9. */
@@ -151,6 +178,9 @@ main {
 .more h2 { margin: 0 16px 10px; font-size: 1.15rem; font-weight: 800; }
 
 @media (max-width: 480px) {
-  :root { --card: 220px; }
+  :root { --card: 240px; }
   .brand { font-size: 1.15rem; }
+  .top { flex-wrap: wrap; }
+  .search { flex-basis: 100%; max-width: none; margin-left: 0; order: 3; }
+  .top:has(.back) .brand { display: none; }
 }

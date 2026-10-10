@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Build docs/catalog.json from allowlist.yaml using the YouTube Data API v3.
 
+videos.list is asked for snippet, contentDetails and statistics in one call, so
+view counts cost no extra quota.
+
 Quota notes (1 unit each, never search.list which costs 100):
   channels.list      one call per unresolved handle, one per 50 channel IDs
   playlistItems.list one call per page of 50 items
@@ -207,8 +210,8 @@ def resolve_channels(yt: YouTube, refs: list[str], cache: dict) -> dict[str, str
         else:
             warn(f"channel {ref!r} is neither an @handle nor a UC... id, skipping")
             continue
-        if result[ref] not in cache["channels"]:
-            need_meta.append(result[ref])
+        if "avatar" not in cache["channels"].get(result[ref], {}):
+            need_meta.append(result[ref])  # not cached, or cached before avatars were stored
     for batch in chunks(sorted(set(need_meta)), 50):
         data = yt.get("channels", part="snippet,contentDetails", id=",".join(batch))
         for item in data.get("items") or []:
@@ -221,10 +224,13 @@ def resolve_channels(yt: YouTube, refs: list[str], cache: dict) -> dict[str, str
 
 
 def channel_meta(item: dict) -> dict:
+    thumbs = item["snippet"].get("thumbnails") or {}
+    avatar = (thumbs.get("default") or thumbs.get("medium") or {}).get("url", "")
     return {
         "title": item["snippet"]["title"],
         "handle": item["snippet"].get("customUrl", ""),
         "uploads": item["contentDetails"]["relatedPlaylists"]["uploads"],
+        "avatar": avatar,
     }
 
 
@@ -235,10 +241,12 @@ def fetch_videos(yt: YouTube, ids: list[str]) -> dict[str, dict]:
     """videos.list in batches of 50. Returns id -> normalized video dict."""
     out: dict[str, dict] = {}
     for batch in chunks(ids, 50):
-        data = yt.get("videos", part="snippet,contentDetails", id=",".join(batch), maxResults=50)
+        data = yt.get("videos", part="snippet,contentDetails,statistics", id=",".join(batch), maxResults=50)
         for item in data.get("items") or []:
             sn, cd = item["snippet"], item["contentDetails"]
+            views = (item.get("statistics") or {}).get("viewCount")  # absent when the uploader hides it
             out[item["id"]] = {
+                "views": int(views) if views is not None else None,
                 "id": item["id"],
                 "title": sn.get("title", ""),
                 "channel": sn.get("channelTitle", ""),
@@ -299,7 +307,7 @@ def videos_from_playlist(yt: YouTube, playlist_id: str, settings: dict, blocked:
 
 
 def public_video(v: dict) -> dict:
-    return {k: v[k] for k in ("id", "title", "channel", "published", "duration", "thumbnail")}
+    return {k: v[k] for k in ("id", "title", "channel", "channelId", "published", "duration", "views", "thumbnail")}
 
 
 def build_shelf(yt: YouTube, shelf: dict, settings: dict, blocked: set, cache: dict) -> dict:
@@ -361,8 +369,17 @@ def main() -> int:
         print(f"shelf: {shelf['name']}")
         shelves.append(build_shelf(yt, shelf, settings, blocked, cache))
 
+    # Avatars for the channels we know (allowlisted ones). Playlist videos from
+    # other channels simply have no avatar and the site shows an initial instead.
+    used = {v["channelId"] for s in shelves for v in s["videos"]}
+    channels = {
+        cid: {"name": cache["channels"][cid]["title"], "avatar": cache["channels"][cid].get("avatar", "")}
+        for cid in sorted(used)
+        if cid in cache["channels"]
+    }
     catalog = {
-        "version": 1,
+        "version": 2,
+        "channels": channels,
         "settings": {
             "min_duration_seconds": settings["min_duration_seconds"],
             "max_videos_per_channel": settings["max_videos_per_channel"],
