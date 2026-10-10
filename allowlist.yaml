@@ -46,7 +46,7 @@ shelves:
     channels:
       - "@BBCEarth"           # BBC Earth: Planet Earth clips
       - "@BBCEarthKids"       # BBC Earth Kids
-      - "@NatGeoWild"         # Nat Geo WILD
+      - "@NatGeoAnimals"      # Nat Geo Animals (formerly Nat Geo WILD)
       - "@NatGeoKids"         # National Geographic Kids
       - "@BraveWilderness"    # Brave Wilderness: Coyote Peterson
       - "@TheDodo"            # The Dodo: animal rescue stories
@@ -61,8 +61,8 @@ shelves:
       - "@Discovery"          # Discovery Channel
       - "@SmithsonianChannel"
       - "@NOVAPBS"            # NOVA on PBS
-      - "@PBSEons"            # PBS Eons: natural history and dinosaurs
-      - "@MythBusters"
+      - "UCzR-rom72PHN9Zg7RML9EbA"  # PBS Eons: natural history and dinosaurs
+      # MythBusters has no official handle; clips are on @Discovery
     playlists: []
     videos: []
 
@@ -80,7 +80,7 @@ shelves:
   - name: BattleBots and robot combat
     channels:
       - "@BattleBots"         # BattleBots official
-      - "@RobotWars"          # Robot Wars official
+      # Robot Wars: no official YouTube channel; episodes are on the Mech+ service
       - "@NHRL"               # Norwalk Havoc Robot League
     playlists: []
     videos: []
@@ -88,7 +88,7 @@ shelves:
   - name: Piano
     channels:
       - "@HoffmanAcademy"     # Hoffman Academy: piano lessons for kids
-      - "@Pianote"            # Pianote: lessons for beginners
+      - "@PianoteOfficial"    # Pianote: lessons for beginners
       - "@PianoVideoLessons"  # Piano Video Lessons: step by step
       - "@Rousseau"           # Rousseau: falling-note piano performances
     playlists: []
@@ -98,14 +98,14 @@ shelves:
     channels:
       - "@JustinGuitar"       # JustinGuitar: the classic beginner course
       - "@MartyMusic"         # Marty Music: songs and riffs
-      - "@AndyGuitar"         # Andy Guitar: beginner lessons
+      - "UC9cvVvlvr-qBssphm1EdYGQ"  # Andy Guitar: beginner lessons (handle @andyguitar is taken by someone else)
       - "@PaulDavids"         # Paul Davids: technique and theory
     playlists: []
     videos: []
 
   - name: Chess
     channels:
-      - "@ChessKid"           # ChessKid: made for kids
+      - "@ChessKidOfficial"   # ChessKid: made for kids
       - "@GothamChess"        # GothamChess: lessons and game recaps (teen humor)
       - "@chess"              # Chess.com official
       - "@agadmator"          # agadmator: classic game analysis
@@ -124,7 +124,7 @@ shelves:
   - name: Coding
     channels:
       - "@ScratchTeam"        # Scratch: block coding for kids
-      - "@codeorg"            # Code.org
+      - "UCJyEBMU1xVP2be1-AoGS1BA"  # Code.org (handle @codeorg is taken by someone else)
     playlists: []
     videos: []
 
