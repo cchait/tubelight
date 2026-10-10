@@ -3,9 +3,9 @@
 # This is the only file you need to edit. Every channel, playlist and video
 # listed here is shown on the site; nothing else is.
 #
-# The channels below are EXAMPLES. Replace them with the ones you want your
-# kids to see. Handles start with "@", channel IDs start with "UC",
-# playlist IDs start with "PL" (or "UU"), video IDs are 11 characters.
+# Handles start with "@" (from the channel's URL), channel IDs start with
+# "UC", playlist IDs start with "PL" (or "UU"), video IDs are 11 characters.
+# Remove any channel you do not want; add your own anywhere.
 
 settings:
   min_duration_seconds: 180      # drops Shorts and clips shorter than 3 minutes
@@ -18,23 +18,124 @@ blocked_videos: []
   # - "dQw4w9WgXcQ"
 
 shelves:
-  - name: Science            # EXAMPLE shelf, replace
+  - name: Science
     channels:
-      - "@SciShowKids"       # example handle
-      - "@TEDEd"             # example handle
+      - "@SciShowKids"        # SciShow Kids: short science for 5-10 year olds
+      - "@TEDEd"              # TED-Ed: animated lessons
+      - "@CrashCourseKids"    # Crash Course Kids: grade-school science
+      - "@MinuteEarth"        # MinuteEarth: animated earth science
+      - "@SciShow"            # SciShow: science news and explainers (teens)
+      - "@Veritasium"         # Veritasium: physics and engineering
+      - "@physicsgirl"        # Physics Girl: experiments
     playlists: []
     videos:
-      - "aircAruvnKk"        # example single video: 3Blue1Brown, neural networks
+      - "aircAruvnKk"         # 3Blue1Brown: But what is a neural network?
 
-  - name: Art and making     # EXAMPLE shelf, replace
+  - name: Space and NASA
     channels:
-      - "@ArtforKidsHub"     # example handle
+      - "@NASA"               # NASA: launches, missions, ISS
+      - "@NASAJPL"            # NASA Jet Propulsion Laboratory: rovers and probes
+      - "@EuropeanSpaceAgency"
+      - "@EverydayAstronaut"  # Everyday Astronaut: rockets explained
+      - "@ScottManley"        # Scott Manley: space news and orbital mechanics
+      - "@kurzgesagt"         # Kurzgesagt: animated science (some heavy topics)
     playlists: []
-      # - "PLxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     videos: []
 
-  - name: Stories and songs  # EXAMPLE shelf, replace
+  - name: Nature and animals
     channels:
-      - "@SesameStreet"      # example handle
+      - "@BBCEarth"           # BBC Earth: Planet Earth clips
+      - "@BBCEarthKids"       # BBC Earth Kids
+      - "@NatGeoWild"         # Nat Geo WILD
+      - "@NatGeoKids"         # National Geographic Kids
+      - "@BraveWilderness"    # Brave Wilderness: Coyote Peterson
+      - "@TheDodo"            # The Dodo: animal rescue stories
+      - "@KQEDDeepLook"       # Deep Look: macro nature films
+      - "@AnimalPlanet"
+    playlists: []
+    videos: []
+
+  - name: Documentaries
+    channels:
+      - "@NatGeo"             # National Geographic
+      - "@Discovery"          # Discovery Channel
+      - "@SmithsonianChannel"
+      - "@NOVAPBS"            # NOVA on PBS
+      - "@PBSEons"            # PBS Eons: natural history and dinosaurs
+      - "@MythBusters"
+    playlists: []
+    videos: []
+
+  - name: Building robots and engineering
+    channels:
+      - "@MarkRober"          # Mark Rober: engineering stunts
+      - "@Hacksmith"          # Hacksmith Industries: building movie gadgets
+      - "@JamesBruton"        # James Bruton: robots and 3D printing
+      - "@StuffMadeHere"      # Stuff Made Here: precision builds
+      - "@SimoneGiertz"       # Simone Giertz: inventions
+      - "@SmarterEveryDay"    # Smarter Every Day: how things work
+    playlists: []
+    videos: []
+
+  - name: BattleBots and robot combat
+    channels:
+      - "@BattleBots"         # BattleBots official
+      - "@RobotWars"          # Robot Wars official
+      - "@NHRL"               # Norwalk Havoc Robot League
+    playlists: []
+    videos: []
+
+  - name: Piano
+    channels:
+      - "@HoffmanAcademy"     # Hoffman Academy: piano lessons for kids
+      - "@Pianote"            # Pianote: lessons for beginners
+      - "@PianoVideoLessons"  # Piano Video Lessons: step by step
+      - "@Rousseau"           # Rousseau: falling-note piano performances
+    playlists: []
+    videos: []
+
+  - name: Learning guitar
+    channels:
+      - "@JustinGuitar"       # JustinGuitar: the classic beginner course
+      - "@MartyMusic"         # Marty Music: songs and riffs
+      - "@AndyGuitar"         # Andy Guitar: beginner lessons
+      - "@PaulDavids"         # Paul Davids: technique and theory
+    playlists: []
+    videos: []
+
+  - name: Chess
+    channels:
+      - "@ChessKid"           # ChessKid: made for kids
+      - "@GothamChess"        # GothamChess: lessons and game recaps (teen humor)
+      - "@chess"              # Chess.com official
+      - "@agadmator"          # agadmator: classic game analysis
+      - "@ChessNetwork"       # ChessNetwork: calm commentary
+    playlists: []
+    videos: []
+
+  - name: Math
+    channels:
+      - "@numberphile"        # Numberphile
+      - "@3blue1brown"        # 3Blue1Brown: visual math
+      - "@standupmaths"       # Stand-up Maths: Matt Parker
+    playlists: []
+    videos: []
+
+  - name: Coding
+    channels:
+      - "@ScratchTeam"        # Scratch: block coding for kids
+      - "@codeorg"            # Code.org
+    playlists: []
+    videos: []
+
+  - name: Art and making
+    channels:
+      - "@ArtforKidsHub"      # Art for Kids Hub: follow-along drawing
+    playlists: []
+    videos: []
+
+  - name: Stories and songs
+    channels:
+      - "@SesameStreet"
     playlists: []
     videos: []
