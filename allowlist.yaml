@@ -124,7 +124,7 @@ shelves:
   - name: Coding
     channels:
       - "@ScratchTeam"        # Scratch: block coding for kids
-      - "UCJyEBMU1xVP2be1-AoGS1BA"  # Code.org (handle @codeorg is taken by someone else)
+      # - "@codeorg"          # Code.org, now "CodeAI": recent uploads are teacher webinars, so left out
     playlists: []
     videos: []
 
