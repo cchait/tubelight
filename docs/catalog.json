@@ -11907,30 +11907,6 @@
    "name": "Coding",
    "videos": [
     {
-     "channel": "CodeAI",
-     "duration": 404,
-     "id": "jpcmKWAmXx4",
-     "published": "2026-08-17T15:02:19Z",
-     "thumbnail": "https://i.ytimg.com/vi/jpcmKWAmXx4/mqdefault.jpg",
-     "title": "Next in AI Education: The Urgent Need for Teacher Training"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 5545,
-     "id": "mc4hbP9ELT0",
-     "published": "2026-07-14T06:59:56Z",
-     "thumbnail": "https://i.ytimg.com/vi/mc4hbP9ELT0/mqdefault.jpg",
-     "title": "AI Literacy in Education: System-Level Perspectives and Priorities"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 5414,
-     "id": "U0GA4_S2BB0",
-     "published": "2026-06-25T21:55:55Z",
-     "thumbnail": "https://i.ytimg.com/vi/U0GA4_S2BB0/mqdefault.jpg",
-     "title": "AI Literacy in Education: Practical Approaches for Teaching and Learning | AILit Framework Webinar"
-    },
-    {
      "channel": "Scratch Team",
      "duration": 3660,
      "id": "5hCNa_E_YIE",
@@ -12003,54 +11979,6 @@
      "title": "Advanced Topics: Clones | Tutorial"
     },
     {
-     "channel": "CodeAI",
-     "duration": 203,
-     "id": "22N_fDIAcB4",
-     "published": "2025-06-06T14:42:21Z",
-     "thumbnail": "https://i.ytimg.com/vi/22N_fDIAcB4/mqdefault.jpg",
-     "title": "Data Science"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 180,
-     "id": "xkVwZEogksw",
-     "published": "2025-06-06T14:42:17Z",
-     "thumbnail": "https://i.ytimg.com/vi/xkVwZEogksw/mqdefault.jpg",
-     "title": "Data Science: Using Python"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 201,
-     "id": "21eVegaVMtE",
-     "published": "2025-05-29T14:17:41Z",
-     "thumbnail": "https://i.ytimg.com/vi/21eVegaVMtE/mqdefault.jpg",
-     "title": "Exploring Generative AI"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 194,
-     "id": "O_VjO1cx-No",
-     "published": "2025-05-29T14:17:36Z",
-     "thumbnail": "https://i.ytimg.com/vi/O_VjO1cx-No/mqdefault.jpg",
-     "title": "Problem Solving with AI"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 4381,
-     "id": "5bDpqVGFVSE",
-     "published": "2025-05-22T13:54:08Z",
-     "thumbnail": "https://i.ytimg.com/vi/5bDpqVGFVSE/mqdefault.jpg",
-     "title": "Empowering Learners for the Age of AI: Draft AI Literacy Framework Launch"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 203,
-     "id": "MDtQjObQ8yY",
-     "published": "2025-03-19T14:12:46Z",
-     "thumbnail": "https://i.ytimg.com/vi/MDtQjObQ8yY/mqdefault.jpg",
-     "title": "Music Lab: Roxanne Harris, Creative Coder and Live Performer"
-    },
-    {
      "channel": "Scratch Team",
      "duration": 334,
      "id": "Y_X5PhI0v-w",
@@ -12097,62 +12025,6 @@
      "published": "2024-11-12T17:19:12Z",
      "thumbnail": "https://i.ytimg.com/vi/_Ozdi5XOqPc/mqdefault.jpg",
      "title": "Hour of Code 2024 with Scratch: Spreading Kindness with Gitanjali Rao"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 190,
-     "id": "2RdK6k45koY",
-     "published": "2024-10-15T13:47:51Z",
-     "thumbnail": "https://i.ytimg.com/vi/2RdK6k45koY/mqdefault.jpg",
-     "title": "Generative AI: Attention"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 343,
-     "id": "S6RXs_hK0cI",
-     "published": "2024-07-19T18:31:14Z",
-     "thumbnail": "https://i.ytimg.com/vi/S6RXs_hK0cI/mqdefault.jpg",
-     "title": "BBC's The Human Component: Code.org"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 364,
-     "id": "l0w-qjYe9dQ",
-     "published": "2024-06-24T13:00:46Z",
-     "thumbnail": "https://i.ytimg.com/vi/l0w-qjYe9dQ/mqdefault.jpg",
-     "title": "Getting Started with CodeAI: Creating a Classroom Section"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 373,
-     "id": "h5PvLB5gZkg",
-     "published": "2024-06-24T13:00:46Z",
-     "thumbnail": "https://i.ytimg.com/vi/h5PvLB5gZkg/mqdefault.jpg",
-     "title": "Getting Started with CodeAI: Progress Feedback & Assessment"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 323,
-     "id": "hrFfvUBBWhU",
-     "published": "2024-06-24T13:00:43Z",
-     "thumbnail": "https://i.ytimg.com/vi/hrFfvUBBWhU/mqdefault.jpg",
-     "title": "Getting Started with CodeAI: Basic Features"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 254,
-     "id": "cl-zQjJKYX4",
-     "published": "2024-06-24T13:00:39Z",
-     "thumbnail": "https://i.ytimg.com/vi/cl-zQjJKYX4/mqdefault.jpg",
-     "title": "Getting Started with CodeAI: Student Experience"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 391,
-     "id": "GpaeAdq36Ls",
-     "published": "2024-06-24T13:00:25Z",
-     "thumbnail": "https://i.ytimg.com/vi/GpaeAdq36Ls/mqdefault.jpg",
-     "title": "Getting Started with CodeAI: Integrations for Learning Management Systems"
     },
     {
      "channel": "Scratch Team",
@@ -12227,46 +12099,6 @@
      "title": "Scratch My Blocks, Part 3: Custom Blocks with Parameters | Tutorial"
     },
     {
-     "channel": "CodeAI",
-     "duration": 1556,
-     "id": "o64DGQ_rh_g",
-     "published": "2023-12-08T19:12:02Z",
-     "thumbnail": "https://i.ytimg.com/vi/o64DGQ_rh_g/mqdefault.jpg",
-     "title": "Hour of Code 2023 Live Stream with Melissa Toohey"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 1969,
-     "id": "jwWhCvJK5DU",
-     "published": "2023-12-07T20:04:59Z",
-     "thumbnail": "https://i.ytimg.com/vi/jwWhCvJK5DU/mqdefault.jpg",
-     "title": "Hour of Code 2023 Live Stream with Hadi Partovi"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 1831,
-     "id": "Xbe8iNkQibs",
-     "published": "2023-12-07T14:02:39Z",
-     "thumbnail": "https://i.ytimg.com/vi/Xbe8iNkQibs/mqdefault.jpg",
-     "title": "Hour of Code 2023 Live Stream with Emma Wingreen"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 1623,
-     "id": "DalXBiAuRRk",
-     "published": "2023-12-06T15:31:48Z",
-     "thumbnail": "https://i.ytimg.com/vi/DalXBiAuRRk/mqdefault.jpg",
-     "title": "Hour of Code 2023 Live Stream with Samantha Schwartz"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 1781,
-     "id": "HHD7QkQ4cYY",
-     "published": "2023-12-04T17:54:36Z",
-     "thumbnail": "https://i.ytimg.com/vi/HHD7QkQ4cYY/mqdefault.jpg",
-     "title": "Hour of Code 2023 Live Stream with Erik Dillaman"
-    },
-    {
      "channel": "Scratch Team",
      "duration": 283,
      "id": "LncoieV8m3k",
@@ -12275,84 +12107,12 @@
      "title": "Scratch My Blocks, Part 2: Tips and Tricks | Tutorial"
     },
     {
-     "channel": "CodeAI",
-     "duration": 323,
-     "id": "xuJq_Ee47wU",
-     "published": "2023-11-27T19:48:34Z",
-     "thumbnail": "https://i.ytimg.com/vi/xuJq_Ee47wU/mqdefault.jpg",
-     "title": "Simulating a Marine Ecosystem Walkthrough"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 392,
-     "id": "kIlPChrD2YQ",
-     "published": "2023-11-27T19:48:31Z",
-     "thumbnail": "https://i.ytimg.com/vi/kIlPChrD2YQ/mqdefault.jpg",
-     "title": "Modeling Animal Adaptations Walkthrough"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 341,
-     "id": "yn_fR15qLhg",
-     "published": "2023-11-27T19:48:27Z",
-     "thumbnail": "https://i.ytimg.com/vi/yn_fR15qLhg/mqdefault.jpg",
-     "title": "Coding Interactive Maps Walkthrough"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 308,
-     "id": "Id8TZy_03nU",
-     "published": "2023-11-27T19:48:24Z",
-     "thumbnail": "https://i.ytimg.com/vi/Id8TZy_03nU/mqdefault.jpg",
-     "title": "Coding a Geometric Star Quilt Walkthrough"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 364,
-     "id": "sO53KkYDejk",
-     "published": "2023-11-27T19:48:20Z",
-     "thumbnail": "https://i.ytimg.com/vi/sO53KkYDejk/mqdefault.jpg",
-     "title": "Coding a Time Capsule Walkthrough"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 341,
-     "id": "F1iy9JPA5aw",
-     "published": "2023-11-27T19:48:17Z",
-     "thumbnail": "https://i.ytimg.com/vi/F1iy9JPA5aw/mqdefault.jpg",
-     "title": "Coding Book Covers Walkthrough"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 332,
-     "id": "wSLRswf2CKs",
-     "published": "2023-11-27T19:48:13Z",
-     "thumbnail": "https://i.ytimg.com/vi/wSLRswf2CKs/mqdefault.jpg",
-     "title": "Coding with Poetry Walkthrough"
-    },
-    {
      "channel": "Scratch Team",
      "duration": 242,
      "id": "rfklBqvDl-s",
      "published": "2023-11-21T14:00:40Z",
      "thumbnail": "https://i.ytimg.com/vi/rfklBqvDl-s/mqdefault.jpg",
      "title": "Scratch My Blocks, Part 1: Create Custom Blocks | Tutorial"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 3330,
-     "id": "dW1t8JAkJXI",
-     "published": "2023-11-14T20:57:49Z",
-     "thumbnail": "https://i.ytimg.com/vi/dW1t8JAkJXI/mqdefault.jpg",
-     "title": "CSEdCon 2023: State of CS in 2030"
-    },
-    {
-     "channel": "CodeAI",
-     "duration": 946,
-     "id": "ML217EM4u_w",
-     "published": "2023-11-14T20:57:46Z",
-     "thumbnail": "https://i.ytimg.com/vi/ML217EM4u_w/mqdefault.jpg",
-     "title": "CSEdCon 2023: Recognitions"
     },
     {
      "channel": "Scratch Team",
